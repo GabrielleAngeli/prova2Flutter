@@ -64,7 +64,9 @@ class RegistrationScreenState extends State<RegistrationScreen> {
     bool isViewMode = widget.tennisData != null;  // Verifique se é modo de visualização (edição)
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Cadastro de novo tênis')),
+      appBar: AppBar(title: Text(
+        isViewMode ? 'Editar Tênis' : 'Cadastro de Novo Tênis',
+      )),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
