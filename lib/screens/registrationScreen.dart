@@ -65,7 +65,7 @@ class RegistrationScreenState extends State<RegistrationScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text(
-        isViewMode ? 'Editar Tênis' : 'Cadastro de Novo Tênis',
+        isViewMode ? 'Excluir Tênis' : 'Cadastro de Novo Tênis',
       )),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
